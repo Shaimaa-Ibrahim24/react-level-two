@@ -1,0 +1,151 @@
+/* =============
+ table of contents
+===============
+
+0. global styles
+1. ul class .flex
+      1.1 sub HTML + css + JavaScript
+      1.2 sub sub of CSS
+
+
+2. main & footer
+3. header of mobile
+ 
+*/
+
+/* ===============
+   0. global style
+================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Cairo', sans-serif;
+  text-decoration: none;
+  list-style: none;
+
+  /* letter-spacing: 1px; */
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: #1b1b1b;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+/* ===============
+   1.  ul class .flex
+================ */
+
+.hide-when-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.main-list {
+  padding: 10px 15px 12px;
+  position: relative;
+}
+
+.main-link {
+  padding: 10px;
+}
+
+.main-link:hover,.main-link.active {
+  color: cyan;
+  box-shadow: 0 0 5px cyan;
+  border-radius: 5px;
+}
+
+/* =======================================
+   1.1 sub HTML + css + JavaScript
+======================================== */
+
+
+.main-list:hover {
+  display: block;
+}
+
+ul.lang-box{
+  display: none;
+  position: absolute;
+  background-color: #1b1b1b;
+  border-top: 1px solid cyan;
+  border-radius: 5px;
+  width: 130px;
+  left: -16px;
+  top: 40px;
+  z-index: 3;
+}
+li.lang:hover ul.lang-box{
+  display: block;
+}
+ul.lang-box li{
+  padding: 10px 8px;
+  text-align: start;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+ul.lang-box li:hover{
+  border-bottom: 1px solid #151515;
+  font-size: 15px;
+}
+/* ==================
+    2. main & footer
+===================== */
+main{
+  color: #1b1b1b;
+  min-height: calc(100vh - 128.64px);
+  font-size: 30px;
+  line-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.light .pls{
+  color: black;
+}
+
+.light main p, .light main h6, .light main time{
+  color: #242424;
+}
+.darky{
+  background-color: transparent;
+padding: 0.3rem 0.5rem;
+border: 1px solid white;
+border-radius: 5px;
+cursor: pointer;
+transition: 0.5s;
+}
+.darky:hover{
+  padding: 0.5rem 0.8rem;
+  border: 2px solid teal;
+}
+
+.dark,.dark main{
+  background-color: #242424;
+  color: white;
+}

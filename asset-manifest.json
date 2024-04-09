@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-level-two/static/css/main.f0071b7b.css",
+    "main.js": "/react-level-two/static/js/main.d49cb113.js",
+    "index.html": "/react-level-two/index.html",
+    "main.f0071b7b.css.map": "/react-level-two/static/css/main.f0071b7b.css.map",
+    "main.d49cb113.js.map": "/react-level-two/static/js/main.d49cb113.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0071b7b.css",
+    "static/js/main.d49cb113.js"
+  ]
+}

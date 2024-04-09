@@ -1,0 +1,12 @@
+
+
+.hide-when-mobile{
+  flex-direction: column;
+}
+button, p,h6, footer{
+font-size: 17px !important;
+}
+.edit-task section.sub-task{
+  max-width: 320px;
+  
+}
